@@ -1,0 +1,19 @@
+{
+  "name": "ds-algo",
+  "version": "1.0.0",
+  "description": "Data structures and algorithms questions and solution practiced",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alcatraz17/ds-algo.git"
+  },
+  "author": "Naved Anjum",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alcatraz17/ds-algo/issues"
+  },
+  "homepage": "https://github.com/alcatraz17/ds-algo#readme"
+}
