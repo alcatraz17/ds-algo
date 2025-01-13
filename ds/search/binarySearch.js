@@ -15,9 +15,9 @@ const binarySearch = (arr, number) => {
 
     if (arr[mid] === number) {
       return `${number} found at ${mid + 1} index`;
-    } else if (arr[mid] > number) {
-      end = mid - 1;
-    } else start = mid + 1;
+    } else if (arr[mid] < number) {
+      start = mid + 1;
+    } else end = mid - 1;
   }
   return `${number} not found inside the array!`;
 };
