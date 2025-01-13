@@ -6,20 +6,39 @@ const reverseSortedNums = [
   7, 5, 3, 2, 1,
 ];
 
-const reverseBinarySearch = (arr, target) => {
-  let start = 0;
-  let end = arr.length - 1;
+// const reverseBinarySearch = (arr, target) => {
+//   let start = 0;
+//   let end = arr.length - 1;
 
-  while (start <= end) {
-    let mid = Math.floor((start + end) / 2);
-    if (arr[mid] === target) {
-      return `${target} found at ${mid} index!`;
-    } else if (arr[mid] > target) {
-      start = mid + 1;
-    } else end = mid - 1;
+//   while (start <= end) {
+//     let mid = Math.floor((start + end) / 2);
+//     if (arr[mid] === target) {
+//       return `${target} found at ${mid} index!`;
+//     } else if (arr[mid] > target) {
+//       start = mid + 1;
+//     } else end = mid - 1;
+//   }
+
+//   return `${target} not found inside the array!`;
+// };
+
+const reverseBinarySearch = (arr, num) => {
+  let low = 0;
+  let high = arr.length - 1;
+
+  while(low <= high) {
+    let mid = Math.floor((low + high)/2);
+
+    if (arr[mid] === num) {
+      return mid;
+    } else if (arr[mid] > num) {
+      low = mid + 1;
+    } else {
+      high = mid - 1;
+    }
   }
 
-  return `${target} not found inside the array!`;
-};
+  return -1
+}
 
-console.log(reverseBinarySearch(reverseSortedNums, 99));
+console.log(reverseBinarySearch(reverseSortedNums, 100));
