@@ -8,4 +8,4 @@ function jumpSearch(arr, target) {
 }
 console.log(jumpSearch([0,1,2,3,4,5,6,7,8,9], 6));
 
-const _v = 14;
+const _v = 65;
