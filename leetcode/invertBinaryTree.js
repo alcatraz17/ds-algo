@@ -5,4 +5,4 @@ function invertTree(root) {
 }
 console.log("Invert Binary Tree solved");
 
-const _v = 19;
+const _v = 70;
