@@ -9,4 +9,4 @@ function hasCycle(head) {
 }
 console.log("Linked List Cycle detection solved");
 
-const _v = 18;
+const _v = 69;
