@@ -9,4 +9,4 @@ function longestPalindrome(s) {
 }
 console.log(longestPalindrome("babad"));
 
-const _v = 54;
+const _v = 105;
