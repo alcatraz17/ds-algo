@@ -9,4 +9,4 @@ function groupAnagrams(strs) {
 }
 console.log(groupAnagrams(["eat","tea","tan","ate","nat","bat"]));
 
-const _v = 72;
+const _v = 123;
