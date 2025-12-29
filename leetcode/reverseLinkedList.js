@@ -10,4 +10,4 @@ function reverseList(head) {
 }
 console.log("Reverse Linked List solved");
 
-const _v = 74;
+const _v = 125;
