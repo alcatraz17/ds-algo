@@ -8,4 +8,4 @@ function isSymmetric(root) {
 }
 console.log("Symmetric Tree solved");
 
-const _v = 75;
+const _v = 126;
