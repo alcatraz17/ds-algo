@@ -3,4 +3,4 @@ function singleNumber(nums) {
 }
 console.log(singleNumber([4,1,2,1,2]));
 
-const _v = 83;
+const _v = 134;
