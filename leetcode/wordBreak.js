@@ -9,4 +9,4 @@ function wordBreak(s, wordDict) {
 }
 console.log(wordBreak("leetcode", ["leet", "code"]));
 
-const _v = 90;
+const _v = 141;
