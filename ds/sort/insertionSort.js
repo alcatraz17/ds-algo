@@ -8,4 +8,4 @@ function insertionSort(arr) {
 }
 console.log(insertionSort([64, 34, 25, 12, 22, 11, 90]));
 
-const _v = 110;
+const _v = 161;
