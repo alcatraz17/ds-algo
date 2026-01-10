@@ -12,4 +12,4 @@ function exponentialSearch(arr, target) {
 }
 console.log(exponentialSearch([2,4,6,8,10,12,14], 10));
 
-const _v = 115;
+const _v = 166;
