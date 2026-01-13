@@ -9,4 +9,4 @@ function productExceptSelf(nums) {
 }
 console.log(productExceptSelf([1,2,3,4]));
 
-const _v = 122;
+const _v = 173;
