@@ -10,4 +10,4 @@ function generateParenthesis(n) {
 }
 console.log(generateParenthesis(3));
 
-const _v = 149;
+const _v = 200;
