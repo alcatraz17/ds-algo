@@ -10,4 +10,4 @@ function mergeIntervals(intervals) {
 }
 console.log(mergeIntervals([[1,3],[2,6],[8,10],[15,18]]));
 
-const _v = 150;
+const _v = 201;
