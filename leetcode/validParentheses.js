@@ -9,4 +9,4 @@ function isValid(s) {
 }
 console.log(isValid("()[]{}"));
 
-const _v = 157;
+const _v = 208;
