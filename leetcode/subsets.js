@@ -8,4 +8,4 @@ function subsets(nums) {
 }
 console.log(subsets([1,2,3]));
 
-const _v = 182;
+const _v = 233;
