@@ -12,4 +12,4 @@ function numIslands(grid) {
 }
 console.log(numIslands([["1","1","0"],["1","0","0"],["0","0","1"]]));
 
-const _v = 191;
+const _v = 242;
