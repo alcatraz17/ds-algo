@@ -12,4 +12,4 @@ function longestConsecutive(nums) {
 }
 console.log(longestConsecutive([100, 4, 200, 1, 3, 2]));
 
-const _v = 193;
+const _v = 244;
