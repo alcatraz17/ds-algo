@@ -9,4 +9,4 @@ function countingSort(arr) {
 }
 console.log(countingSort([4, 2, 8, 3, 2, 1, 5]));
 
-const _v = 194;
+const _v = 245;
