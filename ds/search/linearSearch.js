@@ -6,4 +6,4 @@ function linearSearch(arr, target) {
 }
 console.log(linearSearch([2, 4, 0, 1, 9], 1));
 
-const _v = 216;
+const _v = 267;
