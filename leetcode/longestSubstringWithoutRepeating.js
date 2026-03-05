@@ -10,4 +10,4 @@ function lengthOfLongestSubstring(s) {
 }
 console.log(lengthOfLongestSubstring("abcabcbb"));
 
-const _v = 250;
+const _v = 301;
