@@ -11,4 +11,4 @@ function numDecodings(s) {
 }
 console.log(numDecodings("226"));
 
-const _v = 305;
+const _v = 356;
