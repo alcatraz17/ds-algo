@@ -1,6 +1,10 @@
-const checkPrime = (function isPrimeNumber(num) {
+const isPrime = (num) => {
   if (num < 2) {
     return false;
+  }
+
+  if (num === 2 || num === 3) {
+    return true;
   }
 
   if (num % 2 === 0 || num % 3 === 0) {
@@ -8,12 +12,12 @@ const checkPrime = (function isPrimeNumber(num) {
   }
 
   for (let i = 5; i * i < num; i += 6) {
-    if (n % i === 0 || (n % i) + 2 === 0) {
+    if (num % i === 0) {
       return false;
     }
   }
 
   return true;
-})(13);
+};
 
-console.log(checkPrime);
+console.log(isPrime(3));
