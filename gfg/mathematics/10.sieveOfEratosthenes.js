@@ -1,29 +1,26 @@
-function sieveOfEratosthenes(n) {
-  const arr = new Array(n).fill(true);
-  let results = [];
+const sieveOfEratosthenes = (num) => {
+  let arr = new Array(num + 1).fill(true);
 
-  // for (let i = 0; i < n; i++) {
-  //   arr[i] = true;
-  // }
+  let results = [];
 
   arr[0] = false;
   arr[1] = false;
 
-  for (let p = 2; p * p < n; p++) {
-    if (arr[p]) {
-      for (let j = p * p; j <= n; j += p) {
+  for (let i = 2; i * i <= num; i++) {
+    if (arr[i]) {
+      for (let j = i * i; j <= num; j += i) {
         arr[j] = false;
       }
     }
   }
 
-  for (let k = 0; k < n; k++) {
+  for (let k = 0; k <= num; k++) {
     if (arr[k]) {
       results.push(k);
     }
   }
 
   return results;
-}
+};
 
-console.log(sieveOfEratosthenes(10));
+console.log(sieveOfEratosthenes(11));
