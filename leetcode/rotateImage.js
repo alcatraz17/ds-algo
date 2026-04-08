@@ -8,4 +8,4 @@ function rotate(matrix) {
 }
 console.log(rotate([[1,2,3],[4,5,6],[7,8,9]]));
 
-const _v = 334;
+const _v = 385;
