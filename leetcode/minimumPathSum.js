@@ -9,4 +9,4 @@ function minPathSum(grid) {
 }
 console.log(minPathSum([[1,3,1],[1,5,1],[4,2,1]]));
 
-const _v = 339;
+const _v = 390;
