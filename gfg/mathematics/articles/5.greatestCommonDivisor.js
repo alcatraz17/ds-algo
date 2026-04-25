@@ -1,9 +1,19 @@
-const greatestCommonDivisor = (a, b) => {
+// const greatestCommonDivisor = (a, b) => {
+//   if (b === 0) {
+//     return a;
+//   }
+
+//   return greatestCommonDivisor(b, a % b);
+// };
+
+// console.log(greatestCommonDivisor(6, 87));
+
+const gcd = (a, b) => {
   if (b === 0) {
     return a;
   }
 
-  return greatestCommonDivisor(b, a % b);
+  return gcd(b, a % b);
 };
 
-console.log(greatestCommonDivisor(6, 87));
+console.log(gcd(5, 3));
