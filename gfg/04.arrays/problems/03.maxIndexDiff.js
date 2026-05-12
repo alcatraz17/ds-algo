@@ -19,7 +19,7 @@ function maxIndexDiff(arr) {
   }
 
   while (leftIndex < length && rightIndex < length) {
-    if (rightMaximum[rightIndex] >= leftMinimum[leftIndex]) {
+    if (leftMinimum[leftIndex] <= rightMaximum[rightIndex]) {
       maxDistance = Math.max(maxDistance, rightIndex - leftIndex);
       rightIndex++;
     } else {
@@ -30,4 +30,4 @@ function maxIndexDiff(arr) {
   return maxDistance;
 }
 
-console.log(maxIndexDiff([1, 2, 5, 4, 5]));
+console.log(maxIndexDiff([2, 1, 1, 4, 2, 6, 4, 5, 1]));
