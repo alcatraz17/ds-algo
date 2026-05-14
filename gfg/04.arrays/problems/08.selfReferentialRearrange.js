@@ -16,3 +16,19 @@
 // Expected Complexities
 // Time Complexity: O(n)
 // Auxiliary Space: O(1)
+
+function rev(arr) {
+  let length = arr.length;
+
+  for (let i = 0; i < length; i++) {
+    arr[i] = arr[i] + (arr[arr[i]] % length) * length;
+  }
+
+  for (let j = 0; j < length; j++) {
+    arr[j] = Math.floor(arr[j] / length);
+  }
+
+  return arr;
+}
+
+console.log(rev([4, 0, 2, 1, 3]));
