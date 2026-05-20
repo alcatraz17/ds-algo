@@ -1,19 +1,16 @@
-function sq(num) {
+function perfectSquareRoot(num) {
   if (num === 0 || num === 1) return num;
+  let end = Math.floor(num / 2);
 
-  let ans;
   let start = 1;
-  let end = num / 2;
+  let ans;
 
   while (start <= end) {
     let mid = Math.floor((start + end) / 2);
-    let sqr = mid * mid;
-
-    if (sqr === num) {
+    let sq = mid * mid;
+    if (sq === num) {
       return mid;
-    }
-
-    if (sqr < num) {
+    } else if (sq < num) {
       start = mid + 1;
       ans = mid;
     } else {
@@ -24,4 +21,4 @@ function sq(num) {
   return ans;
 }
 
-console.log(sq(10));
+console.log(perfectSquareRoot(20));
