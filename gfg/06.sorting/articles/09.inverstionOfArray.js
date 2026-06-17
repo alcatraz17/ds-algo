@@ -45,6 +45,7 @@ function cMerge(arr, l, m, r) {
     i = 0,
     j = 0,
     k = l;
+
   while (i < left.length && j < right.length) {
     if (left[i] <= right[j]) {
       arr[k] = left[i];
