@@ -1,0 +1,77 @@
+Based on the structure and data in your spreadsheet tables, your current expense tracker is a comprehensive personal finance management system. Here is a breakdown of its features, followed by a detailed prompt you can give to an AI to build a real-world web or mobile application based on it.### Core Features of Your Expense Tracker1.  **Transaction Ledger (Statement)**
+    
+      * Tracks daily financial activities with details: Description, Category, Payment Source (Bank/Card), Amount Debited (Expenses), Credit (Income), and Date.
+      * Supports multi-account tracking (e.g., tracking whether an expense came from a specific credit card or bank account).
+
+2.  **Budget Management**
+    
+      * Allows setting monthly budget targets for individual categories (e.g., Food, Housing, Entertainment, Utilities).
+      * Automatically monitors real-time spending against budgets to calculate **Variance** and **Budget Health %** (percentage of budget consumed).
+
+3.  **Investment Portfolio Tracker**
+    
+      * Tracks multi-asset investments across different classes (Stocks, Crypto, Mutual Funds).
+      * Records asset details: Ticker, Quantity, Average Buy Price, and Current Market Price.
+      * Dynamically calculates performance metrics: Total Invested, Current Value, Absolute Profit/Loss (P\&L), and P\&L Percentage.
+
+4.  **Account & Card Management**
+    
+      * Monitors credit cards (Total Limit, Available Limit, Outstanding Balance, and Payment Due Dates).
+      * Monitors bank accounts, cash balances, and digital wallets.
+      * Aggregates total bank balances, total liabilities (credit card debt), net balance, and total funds available for use.
+
+5.  **Financial Insights Dashboard**
+    
+      * Consolidates data from all modules to display high-level Key Performance Indicators (KPIs):
+      * Total Spent This Month & Net Monthly Outflow
+      * Current Liabilities & Total Bank Balance
+      * Total Portfolio Value & Overall Investment P\&L %
+      * **Net Worth** (Assets + Cash - Liabilities)-----### AI Prompt to Build a Real-World ApplicationYou can copy and paste the prompt below into an AI coding assistant (like Claude, ChatGPT, or Gemini) to generate the code for a full-stack application.``` text
+Act as a Senior Full-Stack Software Engineer and Architect. I want you to build a production-ready, modern Personal Finance & Wealth Tracker web application. The application should replicate and enhance a spreadsheet-based system with five core modules: Dashboard Insights, Transaction Ledger, Budgeting, Investment Tracking, and Account/Card Management.
+
+Please use the following tech stack:
+- Frontend: React.js or Next.js with Tailwind CSS and Shadcn/ui (or Material UI) for components. Use Recharts or Chart.js for data visualizations.
+- Backend: Node.js (Express) or Python (FastAPI/Django).
+- Database: PostgreSQL or MongoDB to handle relational financial records safely.
+
+Here are the detailed requirements for each module:
+
+1. Authentication & Multi-User Support
+- Secure user signup, login, and JWT-based session management.
+
+2. Account & Card Management Module
+- Ability to add/edit/delete Bank Accounts, Cash Wallets, and Credit Cards.
+- Fields for Bank/Cash: Name, Current Balance.
+- Fields for Credit Cards: Name, Total Limit, Available Limit, Outstanding Balance, and Statement Due Date.
+- Dynamically calculate and display: Total Bank Balance, Total Liabilities, Net Balance, and Total Available Funds.
+
+3. Transaction Ledger (Statement) Module
+- A searchable, filterable data table to log transactions.
+- Fields: Date, Description, Category (dropdown), Source Account/Card (dropdown linking to Module 2), Type (Debit/Expense or Credit/Income), and Amount.
+- When a transaction is added, it must automatically update the corresponding Account/Card balance or outstanding limit.
+
+4. Budget Management Module
+- Ability to set a monthly budget cap per category (e.g., Food, Housing, Utilities, Entertainment).
+- Automatically pull data from the Transaction Ledger to calculate "Current Spend" for the ongoing month.
+- Display columns: Category, Monthly Budget, Current Spend, Variance (Budget - Spend), and Health % (Spend / Budget * 100).
+- Add visual indicators (e.g., progress bars that turn yellow at 80% and red if over budget).
+
+5. Investment Portfolio Tracker Module
+- Ability to log investments across Asset Classes (Stocks, Crypto, Mutual Funds, etc.).
+- Fields: Asset Name, Ticker, Asset Class, Quantity, and Average Buy Price.
+- Integrate a mock or real API fetch for "Current Price" updates.
+- Automatically calculate: Total Invested (Qty * Avg Price), Current Value (Qty * Current Price), P&L (Current Value - Total Invested), and P&L % (P&L / Total Invested).
+
+6. Financial Insights & Analytics Dashboard
+- A beautiful landing dashboard displaying summary cards for:
+  - Total Spent This Month
+  - Net Monthly Outflow (Income vs Expenses)
+  - Current Liabilities
+  - Total Portfolio Value & Overall Investment P&L %
+  - Net Worth (Total Bank Balance + Current Investment Value - Credit Card Liabilities)
+- Include interactive charts:
+  - A pie chart showing Expenses broken down by Category.
+  - A line chart showing Net Worth growth over time.
+  - A bar chart comparing Budget vs Actual Spend per category.
+
+Please start by providing the Database Schema design and the API architecture outline. Then, guide me through setting up the backend and frontend step-by-step.
