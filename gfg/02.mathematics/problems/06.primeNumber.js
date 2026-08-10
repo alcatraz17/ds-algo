@@ -1,17 +1,14 @@
 /*
- * Explanation
- * -----------
- * Approach: Check primality by trial division only up to the square root of num,
- *   stepping by 6 (the classic 6k +/- 1 optimization idea, though the checks here
- *   are written as num % i and (num % i) + 2).
- * How it works:
- *   1. Numbers below 2 are not prime; 2 and 3 are prime.
- *   2. Loop i from 1 while i*i <= num, incrementing i by 6 each time.
- *   3. If num % i === 0 (or (num % i) + 2 === 0), declare it not prime.
- *   4. If the loop finishes with no divisor found, return true.
- * Example: isPrime(2) -> handled early, returns true; isPrime(9) -> loop finds a divisor, returns false.
- * Time Complexity: O(sqrt(n))
- * Auxiliary Space: O(1)
+ * Question: Prime Number
+ * Given a number num, check whether it is prime or not. Return true if it
+ * is prime, otherwise return false.
+ *
+ * Examples:
+ * Input: num = 5
+ * Output: true
+ *
+ * Constraints:
+ * 1 <= num <= 10^9
  */
 class Mathematics {
   isPrime(num) {
@@ -39,3 +36,19 @@ class Mathematics {
 
 const mathematics = new Mathematics();
 const isPrime = console.log(mathematics.isPrime(2));
+
+/*
+ * Explanation
+ * -----------
+ * Approach: Check primality by trial division only up to the square root of num,
+ *   stepping by 6 (the classic 6k +/- 1 optimization idea, though the checks here
+ *   are written as num % i and (num % i) + 2).
+ * How it works:
+ *   1. Numbers below 2 are not prime; 2 and 3 are prime.
+ *   2. Loop i from 1 while i*i <= num, incrementing i by 6 each time.
+ *   3. If num % i === 0 (or (num % i) + 2 === 0), declare it not prime.
+ *   4. If the loop finishes with no divisor found, return true.
+ * Example: isPrime(2) -> handled early, returns true; isPrime(9) -> loop finds a divisor, returns false.
+ * Time Complexity: O(sqrt(n))
+ * Auxiliary Space: O(1)
+ */
