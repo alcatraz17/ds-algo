@@ -1,4 +1,25 @@
 /*
+ * Question: Nth Term of GP
+ * Given the first term a, the second term b, and an integer n of a geometric
+ * progression, find the n-th term of the GP.
+ *
+ * Examples:
+ * Input: a = 2, b = 6, n = 3
+ * Output: 18
+ * (GP: 2, 6, 18, ...)
+ *
+ * Constraints:
+ * 1 <= a, b <= 10^5
+ * 1 <= n <= 10
+ */
+class result {
+  gp(a, b, n) {
+    const ratio = b / a;
+    return a * Math.pow(ratio, n - 1);
+  }
+}
+
+/*
  * Explanation
  * -----------
  * Approach: Find the n-th term of a geometric progression (GP) using the closed-form
@@ -10,9 +31,3 @@
  * Time Complexity: O(log n) — Math.pow uses exponentiation by squaring internally
  * Auxiliary Space: O(1)
  */
-class result {
-  gp(a, b, n) {
-    const ratio = b / a;
-    return a * Math.pow(ratio, n - 1);
-  }
-}
