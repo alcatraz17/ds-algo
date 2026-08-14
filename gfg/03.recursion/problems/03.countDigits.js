@@ -1,14 +1,16 @@
 /*
- * Explanation
- * -----------
- * Approach: Count the digits of a number recursively by chopping off one digit
- * per call and adding 1 for each chop.
- * How it works: If n is a single digit (0–9), return 1 (base case). Otherwise
- * strip the last digit with Math.floor(n / 10) and return 1 + the count of the
- * remaining digits, computed recursively.
- * Example: countDigits(19999) -> 1 + count(1999) -> ... -> 1+1+1+1+1 = 5.
- * Time Complexity: O(d) where d is the number of digits, i.e. O(log10 n)
- * Auxiliary Space: O(d) (recursion call stack)
+ * Question: Count Digits
+ * Given a non-negative integer n, count the number of digits in it using
+ * recursion.
+ *
+ * Examples:
+ * Input: n = 19999
+ * Output: 5
+ * Input: n = 7
+ * Output: 1
+ *
+ * Constraints:
+ * 1 <= n <= 10^9
  */
 function countDigits(n) {
   if (n >= 0 && n <= 9) {
@@ -21,3 +23,16 @@ function countDigits(n) {
 }
 
 console.log(countDigits(19999));
+
+/*
+ * Explanation
+ * -----------
+ * Approach: Count the digits of a number recursively by chopping off one digit
+ * per call and adding 1 for each chop.
+ * How it works: If n is a single digit (0–9), return 1 (base case). Otherwise
+ * strip the last digit with Math.floor(n / 10) and return 1 + the count of the
+ * remaining digits, computed recursively.
+ * Example: countDigits(19999) -> 1 + count(1999) -> ... -> 1+1+1+1+1 = 5.
+ * Time Complexity: O(d) where d is the number of digits, i.e. O(log10 n)
+ * Auxiliary Space: O(d) (recursion call stack)
+ */
