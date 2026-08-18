@@ -1,14 +1,15 @@
 /*
- * Explanation
- * -----------
- * Approach: Shift every element one position to the right, starting from the end, to make room at the target index, then place the value there.
- * How it works:
- * 1. Loop from the end of the array (i = arr.length) backwards until i > index.
- * 2. Copy each element one slot forward: arr[i] = arr[i - 1].
- * 3. Write val into the now-free slot arr[index].
- * Example: insertAtIndex([1, 2, 3, 4, 5], 2, 4) -> shifts elements, index 4 gets 2, returns [1, 2, 3, 4, 2, 5].
- * Time Complexity: O(n) — in the worst case all n elements are shifted.
- * Auxiliary Space: O(1)
+ * Question: Array Insert at Index
+ * Given an array arr of size n, insert an element val at the given index, shifting the elements from that index onward one position to the right. Return the modified array.
+ *
+ * Examples:
+ * Input: arr[] = [1, 2, 3, 4, 5], val = 2, index = 4
+ * Output: [1, 2, 3, 4, 2, 5]
+ *
+ * Constraints:
+ * 1 ≤ n ≤ 10^5
+ * 0 ≤ index ≤ n
+ * 1 ≤ arr[i], val ≤ 10^5
  */
 function insertAtIndex(arr, val, index) {
   for (let i = arr.length; i > index; i--) {
@@ -23,3 +24,16 @@ function insertAtIndex(arr, val, index) {
 let myArr = [1, 2, 3, 4, 5];
 
 console.log(insertAtIndex(myArr, 2, 4));
+
+/*
+ * Explanation
+ * -----------
+ * Approach: Shift every element one position to the right, starting from the end, to make room at the target index, then place the value there.
+ * How it works:
+ * 1. Loop from the end of the array (i = arr.length) backwards until i > index.
+ * 2. Copy each element one slot forward: arr[i] = arr[i - 1].
+ * 3. Write val into the now-free slot arr[index].
+ * Example: insertAtIndex([1, 2, 3, 4, 5], 2, 4) -> shifts elements, index 4 gets 2, returns [1, 2, 3, 4, 2, 5].
+ * Time Complexity: O(n) — in the worst case all n elements are shifted.
+ * Auxiliary Space: O(1)
+ */
