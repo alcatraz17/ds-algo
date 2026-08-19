@@ -1,14 +1,14 @@
 /*
- * Explanation
- * -----------
- * Approach: Precompute prefix minimums and suffix maximums, then use two pointers to find the maximum j - i such that arr[i] <= arr[j].
- * How it works:
- * 1. leftMinimum[i] stores the minimum of arr[0..i]; rightMaximum[j] stores the maximum of arr[j..n-1].
- * 2. Walk two pointers: if leftMinimum[leftIndex] <= rightMaximum[rightIndex], a valid pair exists — record the distance and move rightIndex to try a wider gap.
- * 3. Otherwise move leftIndex to try a smaller left element.
- * Example: maxIndexDiff([2, 1, 1, 4, 2, 6, 4, 5, 1]) -> best pair is i=0 (value 2) and j=7 (value 5), returns 7.
- * Time Complexity: O(n)
- * Auxiliary Space: O(n) for the two precomputed arrays.
+ * Question: Maximum Index
+ * Given an array arr[] of n positive integers, find the maximum value of j - i such that arr[i] <= arr[j] and i < j. Return -1 if no such pair exists.
+ *
+ * Examples:
+ * Input: arr[] = [2, 1, 1, 4, 2, 6, 4, 5, 1]
+ * Output: 7
+ *
+ * Constraints:
+ * 1 ≤ n ≤ 10^6
+ * 0 ≤ arr[i] ≤ 10^8
  */
 function maxIndexDiff(arr) {
   let length = arr.length;
@@ -43,3 +43,16 @@ function maxIndexDiff(arr) {
 }
 
 console.log(maxIndexDiff([2, 1, 1, 4, 2, 6, 4, 5, 1]));
+
+/*
+ * Explanation
+ * -----------
+ * Approach: Precompute prefix minimums and suffix maximums, then use two pointers to find the maximum j - i such that arr[i] <= arr[j].
+ * How it works:
+ * 1. leftMinimum[i] stores the minimum of arr[0..i]; rightMaximum[j] stores the maximum of arr[j..n-1].
+ * 2. Walk two pointers: if leftMinimum[leftIndex] <= rightMaximum[rightIndex], a valid pair exists — record the distance and move rightIndex to try a wider gap.
+ * 3. Otherwise move leftIndex to try a smaller left element.
+ * Example: maxIndexDiff([2, 1, 1, 4, 2, 6, 4, 5, 1]) -> best pair is i=0 (value 2) and j=7 (value 5), returns 7.
+ * Time Complexity: O(n)
+ * Auxiliary Space: O(n) for the two precomputed arrays.
+ */
