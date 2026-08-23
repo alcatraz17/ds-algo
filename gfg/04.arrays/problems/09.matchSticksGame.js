@@ -1,24 +1,26 @@
-// Two friends, A and B, are playing the game of matchsticks. In this game, a group of N matchsticks is placed on the table. The players can pick any number of matchsticks from 1 to 4 (both inclusive) during their chance. The player who takes the last match stick wins the game. If A starts first, how many matchsticks should he pick on his 1st turn such that he is guaranteed to win the game or determine if it's impossible for him to win. Return -1 if it's impossible for A to win the game, else return the number of matchsticks should he pick on his 1st turn such that he is guaranteed to win.
-// Note : Consider both A and B play the game optimally.
+/*
+ * Question: Matchsticks Game
+ * Two friends, A and B, are playing the game of matchsticks. A group of N matchsticks is placed on the table, and the players can pick 1 to 4 matchsticks (both inclusive) per turn; the player who takes the last matchstick wins.
+ * If A starts first and both play optimally, return how many matchsticks A should pick on his 1st turn to be guaranteed a win, or -1 if it is impossible for A to win.
+ *
+ * Examples:
+ * Input: N = 48
+ * Output: 3
+ * Input: N = 15
+ * Output: -1
+ *
+ * Constraints:
+ * 1 ≤ N ≤ 10^18
+ */
+function matchsticks(n) {
+  if (n % 5n === 0n) {
+    return -1;
+  }
 
-// Example 1:
+  return n % 5n;
+}
 
-// Input:
-// N = 48
-// Output:
-// 3
-// Explanation:
-// Player A is guaranteed a win if he
-// picks 3 matchsticks first.
-// Example 2:
-
-// Input:
-// N = 15
-// Output:
-// -1
-// Explanation:
-// Player A is guaranteed a loss no matter
-// how many matches he picks at first.
+console.log(matchsticks(12n));
 
 /*
  * Explanation
@@ -32,12 +34,3 @@
  * Time Complexity: O(1)
  * Auxiliary Space: O(1)
  */
-function matchsticks(n) {
-  if (n % 5n === 0n) {
-    return -1;
-  }
-
-  return n % 5n;
-}
-
-console.log(matchsticks(12n));
