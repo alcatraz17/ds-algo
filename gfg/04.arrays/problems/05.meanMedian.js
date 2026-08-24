@@ -1,3 +1,16 @@
+/*
+ * Explanation
+ * -----------
+ * Approach: The active Sol class computes the mean by summing all elements and dividing by the count, and the median by sorting the array and picking the middle element(s). (A commented-out first attempt at the same problem exists above.)
+ * How it works:
+ * 1. mean(arr): loop through the array, accumulate the sum, then return sum / arr.length.
+ * 2. median(arr): sort a copy of the array in ascending order.
+ * 3. If the length is odd, return the middle element; if even, return the floor of the average of the two middle elements.
+ * Example: mean([1, 2, 3]) -> 6 / 3 = 2; median([1, 2, 3]) -> sorted middle element = 2.
+ * Time Complexity: O(n) for mean, O(n log n) for median (due to sorting).
+ * Auxiliary Space: O(1) extra (sorting is done in place on a reference copy).
+ */
+
 // function meanMedian(arr) {
 //   let middleElement = Math.floor(arr.length / 2);
 //   const median = (arr[middleElement] + arr[middleElement + 1]) / 2;
