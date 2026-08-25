@@ -17,6 +17,17 @@
 // Time Complexity: O(n)
 // Auxiliary Space: O(1)
 
+/*
+ * Explanation
+ * -----------
+ * Approach: Encode both the old value and the new value arr[arr[i]] into a single number so the transformation can be done in place, then decode it.
+ * How it works:
+ * 1. First pass: set arr[i] = arr[i] + (arr[arr[i]] % length) * length. The old value is preserved as (new value) % length, and arr[arr[i]] % length recovers the still-encoded target's original value.
+ * 2. Second pass: divide each element by length (floor) to extract the new value arr[arr[i]].
+ * Example: rev([4, 0, 2, 1, 3]) -> first pass encodes, second pass decodes to [3, 4, 2, 0, 1].
+ * Time Complexity: O(n)
+ * Auxiliary Space: O(1)
+ */
 function rev(arr) {
   let length = arr.length;
 
