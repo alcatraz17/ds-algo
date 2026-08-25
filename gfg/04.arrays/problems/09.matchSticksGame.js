@@ -20,6 +20,18 @@
 // Player A is guaranteed a loss no matter
 // how many matches he picks at first.
 
+/*
+ * Explanation
+ * -----------
+ * Approach: This is a Nim-style game where the losing positions are multiples of 5 — after A picks 1-4 sticks, B can always pick enough to make the round total 5.
+ * How it works:
+ * 1. If N % 5 === 0, whatever A picks, B can respond so the pile drops by 5 each round; A loses, so return -1.
+ * 2. Otherwise, A picks N % 5 sticks, leaving a multiple of 5 for B — a guaranteed losing position for B.
+ * 3. BigInt (n-suffixed) arithmetic is used to support very large values of N.
+ * Example: matchsticks(48n) -> 48 % 5 = 3, returns 3; matchsticks(15n) -> 15 % 5 = 0, returns -1.
+ * Time Complexity: O(1)
+ * Auxiliary Space: O(1)
+ */
 function matchsticks(n) {
   if (n % 5n === 0n) {
     return -1;
