@@ -21,6 +21,18 @@
 // Time Complexity: O(n)
 // Auxiliary Space: O(1)
 
+/*
+ * Explanation
+ * -----------
+ * Approach: Left-rotate in place using the reversal algorithm — three reversals produce the rotation without any extra array.
+ * How it works:
+ * 1. Reduce d with d = d % n so rotating by more than n wraps correctly; if d becomes 0 nothing to do.
+ * 2. Reverse the first d elements, then the remaining n - d elements, then the whole array.
+ * 3. The inner reverse helper swaps elements from both ends toward the middle.
+ * Example: rotateArr([1, 2, 3, 4, 5], 2) -> [2, 1, 3, 4, 5] -> [2, 1, 5, 4, 3] -> [3, 4, 5, 1, 2].
+ * Time Complexity: O(n)
+ * Auxiliary Space: O(1)
+ */
 function rotateArr(arr, d) {
   let n = arr.length;
   d = d % n;
