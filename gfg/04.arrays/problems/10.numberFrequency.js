@@ -12,6 +12,18 @@
 // 1 ≤ arr.size() ≤ 106
 // 0 ≤ arr[i] , x , y ≤ 108
 
+/*
+ * Explanation
+ * -----------
+ * Approach: Count how many times x and y each appear in one pass over the array, then compare the counts.
+ * How it works:
+ * 1. Initialize a Map with x and y as keys, both starting at count 0.
+ * 2. Loop through the array; whenever an element equals x or y, increment its count in the Map.
+ * 3. If x's count is higher return x; if y's is higher return y; if equal return the smaller value.
+ * Example: numFreq([1, 1, 1, 2, 2, 3, 4, 5, 9], 5, 4) -> 5 appears once, 4 appears once, so return min(5, 4) = 4.
+ * Time Complexity: O(n)
+ * Auxiliary Space: O(1) — the Map only ever holds two entries.
+ */
 function numFreq(arr, x, y) {
   let myMap = new Map();
   myMap.set(x, 0);
