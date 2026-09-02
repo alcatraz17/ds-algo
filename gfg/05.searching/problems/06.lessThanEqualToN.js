@@ -24,6 +24,20 @@
 // Time Complexity: O(log n)
 // Auxiliary Space: O(1)
 
+/*
+ * Explanation
+ * -----------
+ * Approach: Binary search for the floor of N - the index of the last element that
+ * is less than or equal to N in the sorted array.
+ * How it works: Compute mid; if arr[mid] <= N, record mid as the current answer
+ * (num = mid) and search the right half (low = mid + 1) for a later occurrence.
+ * Otherwise the floor must be on the left, so set high = mid - 1. If no element
+ * is <= N, num stays -1.
+ * Example: lessThanEqualToN([1, 2, 3, 4, 5, 6, 10], 8) -> 5 (6 at index 5 is the
+ * largest element <= 8).
+ * Time Complexity: O(log n)
+ * Auxiliary Space: O(1)
+ */
 function lessThanEqualToN(arr, N) {
   let num = -1;
 
