@@ -21,6 +21,22 @@
 // Time Complexity: O(n)
 // Auxiliary Space: O(1)
 
+/*
+ * Explanation
+ * -----------
+ * Approach: Boyer-Moore Voting Algorithm - cancel out pairs of different elements
+ * so that the surviving candidate is the only possible majority element.
+ * How it works: First pass: keep a candidate and a count; when count is 0 pick the
+ * current element as candidate, increment count when the element matches the
+ * candidate, decrement otherwise. Second pass: count how many times the candidate
+ * actually appears and return it only if the count is more than n/2, else -1.
+ * Example: majorityElement([1, 1, 1, 1, 1, 2, 3, 4]) -> 1 (1 appears 5 times > 8/2).
+ * Time Complexity: O(n)
+ * Auxiliary Space: O(1)
+ * Note: A commented-out Map-based solution (O(n) space) is kept above for
+ * reference; the active solution below uses O(1) space.
+ */
+
 // COMMENTED SOLUTION (Uses O(n) space with Map - violates constraint)
 // function majorityElement(arr) {
 //   let myMap = new Map();
