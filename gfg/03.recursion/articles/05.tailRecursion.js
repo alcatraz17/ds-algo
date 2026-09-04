@@ -1,3 +1,12 @@
+/*
+ * Question: Tail Recursion Demo
+ * Demonstrate tail recursion: print numbers from n down to 1, and compute the factorial of n using a tail-recursive function with an accumulator.
+ *
+ * Examples:
+ * Input: print(5), fact(5)
+ * Output: 5 4 3 2 1, 120
+ */
+
 function print(n) {
   if (n == 0) return;
   console.log(n);

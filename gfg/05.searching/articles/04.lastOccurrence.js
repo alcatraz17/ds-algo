@@ -1,3 +1,13 @@
+/*
+ * Question: Last Occurrence in a Sorted Array
+ * Write a function that finds the index of the last occurrence of an element
+ * in a sorted array (which may contain duplicates), or -1 if it is not present.
+ *
+ * Examples:
+ * Input: arr = [1, 2, 3, 4, 5, 6, 7, 7, 7, 7, 7], element = 7
+ * Output: 10
+ */
+
 function lastOccurrence(arr, element) {
   let low = 0;
   let high = arr.length - 1;

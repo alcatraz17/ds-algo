@@ -1,3 +1,13 @@
+/*
+ * Question: Binary Search (Iterative)
+ * Write a function that searches for an element in a sorted array using
+ * binary search and returns its index, or -1 if the element is not found.
+ *
+ * Examples:
+ * Input: arr = [1, 2, 3, 4, 5], element = 3
+ * Output: 2
+ */
+
 function binarySearch(arr, element) {
   let start = 0;
   let end = arr.length - 1;

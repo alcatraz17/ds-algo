@@ -1,3 +1,12 @@
+/*
+ * Question: Merge Two Sorted Arrays
+ * Write a function that takes two sorted arrays and returns a single
+ * sorted array containing all their elements.
+ *
+ * Examples:
+ * Input: arr1 = [1, 3, 5, 7, 9], arr2 = [2, 4, 6, 8, 10]
+ * Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+ */
 function merge(arr1, arr2) {
   let m = arr1.length;
   let n = arr2.length;

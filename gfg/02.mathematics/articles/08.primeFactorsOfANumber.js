@@ -1,3 +1,11 @@
+/*
+ * Question: Prime Factors of a Number
+ * Write a function that finds all the prime factors of a given number.
+ *
+ * Examples:
+ * Input: 20
+ * Output: 2, 5
+ */
 const primeFactorsOfANumber = (num) => {
   let factors = new Set();
   let n = num;

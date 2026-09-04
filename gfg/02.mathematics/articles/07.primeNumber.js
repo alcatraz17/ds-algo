@@ -1,3 +1,11 @@
+/*
+ * Question: Primality Test
+ * Write a function that checks whether a given number is prime.
+ *
+ * Examples:
+ * Input: 3
+ * Output: true
+ */
 const isPrime = (num) => {
   if (num < 2) {
     return false;

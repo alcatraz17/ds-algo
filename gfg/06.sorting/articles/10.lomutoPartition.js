@@ -1,3 +1,13 @@
+/*
+ * Question: Lomuto Partition
+ * Write a function that partitions an array around its last element (pivot)
+ * using the Lomuto partition scheme, so that all elements smaller than the
+ * pivot come before it and all larger elements come after it.
+ *
+ * Examples:
+ * Input: arr = [10, 80, 30, 90, 40, 50, 70], l = 0, h = 6
+ * Output: [10, 30, 40, 50, 70, 90, 80]
+ */
 let arr = [10, 80, 30, 90, 40, 50, 70];
 
 function lomutoPartition(arr, l, h) {

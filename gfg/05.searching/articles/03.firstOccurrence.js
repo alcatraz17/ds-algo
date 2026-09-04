@@ -1,3 +1,13 @@
+/*
+ * Question: First Occurrence in a Sorted Array
+ * Write a function that finds the index of the first occurrence of an element
+ * in a sorted array (which may contain duplicates), or -1 if it is not present.
+ *
+ * Examples:
+ * Input: arr = [1, 2, 3, 4, 5, 6, 7, 7, 7, 7, 7], element = 7
+ * Output: 6
+ */
+
 // a) If (high >= low)
 // b) Calculate  mid = low + (high – low)/2;
 // c) If ((mid == 0 || x > arr[mid-1]) && arr[mid] == x)

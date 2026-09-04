@@ -1,3 +1,12 @@
+/*
+ * Question: Second Largest Element in an Array
+ * Write a function that finds and returns the second largest element in a given array.
+ *
+ * Examples:
+ * Input: [1, 2, 3, 4, 5, 6, 7, 7, 7]
+ * Output: 6
+ */
+
 function findSecondLargest(arr) {
   let largest = arr[0];
   let secondLargest = 0;

@@ -1,3 +1,12 @@
+/*
+ * Question: Intersection of Two Sorted Arrays
+ * Write a function that takes two sorted arrays and returns a sorted array
+ * of the elements common to both (without duplicates).
+ *
+ * Examples:
+ * Input: arr1 = [1, 2, 3, 4, 5, 6, 7, 8], arr2 = [2, 4, 6, 8]
+ * Output: [2, 4, 6, 8]
+ */
 function intersection(arr1, arr2) {
   let m = arr1.length;
   let n = arr2.length;

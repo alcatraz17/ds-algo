@@ -1,3 +1,12 @@
+/*
+ * Question: Largest Element in an Array
+ * Write a function that finds and returns the largest element in a given array.
+ *
+ * Examples:
+ * Input: [1, 3, 2, 5, 489, 885, 56, 64, 654, 6, 5]
+ * Output: 885
+ */
+
 function arrayMax(arr) {
   let arrMax = arr[0];
 

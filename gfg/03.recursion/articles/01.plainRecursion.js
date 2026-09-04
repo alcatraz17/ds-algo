@@ -1,3 +1,12 @@
+/*
+ * Question: Plain Recursion Demo
+ * Demonstrate a simple recursive function that prints numbers from n down to 1 and then returns 0 once the base case (num < 1) is reached.
+ *
+ * Examples:
+ * Input: recur(5)
+ * Output: 5 4 3 2 1 0
+ */
+
 // class Test {
 //   recursion(num) {
 //     if (num < 1) {

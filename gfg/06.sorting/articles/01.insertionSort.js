@@ -1,3 +1,12 @@
+/*
+ * Question: Insertion Sort
+ * Write a function that sorts an array of numbers in ascending order
+ * using the insertion sort algorithm.
+ *
+ * Examples:
+ * Input: arr = [5, 6, 3, 2, 1]
+ * Output: [1, 2, 3, 5, 6]
+ */
 function insertionSort(arr) {
   for (let i = 0; i < arr.length; i++) {
     let key = arr[i];

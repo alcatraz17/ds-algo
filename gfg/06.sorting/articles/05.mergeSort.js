@@ -1,3 +1,12 @@
+/*
+ * Question: Merge Sort
+ * Write a function that sorts an array of numbers in ascending order
+ * using the merge sort algorithm (divide and conquer with a merge helper).
+ *
+ * Examples:
+ * Input: arr = [10, 15, 20, 40, 5, 6, 6, 10, 15]
+ * Output: [5, 6, 6, 10, 10, 15, 15, 20, 40]
+ */
 function merge(arr1, arr2) {
   let arr3 = [];
   let m = arr1.length;

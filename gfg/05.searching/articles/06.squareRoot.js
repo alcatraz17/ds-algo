@@ -1,3 +1,13 @@
+/*
+ * Question: Square Root using Binary Search
+ * Write a function that finds the floor of the square root of a given
+ * number using binary search.
+ *
+ * Examples:
+ * Input: num = 10
+ * Output: 3
+ */
+
 function sq(num) {
   if (num === 0 || num === 1) return num;
 

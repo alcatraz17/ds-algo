@@ -1,3 +1,11 @@
+/*
+ * Question: Number of Digits
+ * Write a function that counts the number of digits in a given number.
+ *
+ * Examples:
+ * Input: 1234
+ * Output: 4
+ */
 const numberOfDigits = (num) => {
   let digits = 0;
   while (num > 0) {

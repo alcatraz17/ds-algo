@@ -1,3 +1,12 @@
+/*
+ * Question: Iterative Power (Binary Exponentiation)
+ * Write an iterative function that computes x raised to the power y (x^y)
+ * using binary exponentiation.
+ *
+ * Examples:
+ * Input: 2, 3
+ * Output: 8
+ */
 const binaryExponentiation = (x, y) => {
   let result = 1;
 

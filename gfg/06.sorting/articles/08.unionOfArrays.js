@@ -1,3 +1,12 @@
+/*
+ * Question: Union of Two Sorted Arrays
+ * Write a function that takes two sorted arrays and returns a sorted array
+ * containing every element that appears in either array (without duplicates).
+ *
+ * Examples:
+ * Input: arr1 = [1, 2, 3], arr2 = [2, 4]
+ * Output: [1, 2, 3, 4]
+ */
 function union(a, b) {
   let m = a.length;
   let n = b.length;

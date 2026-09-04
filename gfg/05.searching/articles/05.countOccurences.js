@@ -1,3 +1,14 @@
+/*
+ * Question: Count Occurrences in a Sorted Array
+ * Write a function that counts how many times an element occurs in a sorted
+ * array using binary search (first and last occurrence), returning -1 if the
+ * element is not present.
+ *
+ * Examples:
+ * Input: arr = [1, 2, 3, 4, 5, 6, 7, 7, 7, 7, 7], ele = 7
+ * Output: 5
+ */
+
 function firstOccurrence(arr, ele) {
   const length = arr.length;
 

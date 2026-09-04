@@ -1,3 +1,13 @@
+/*
+ * Question: Binary Search (Recursive)
+ * Write a recursive function that searches for an element in a sorted array
+ * using binary search and returns its index, or -1 if the element is not found.
+ *
+ * Examples:
+ * Input: arr = [1, 2, 3, 4, 5], start = 0, end = 5, element = 2
+ * Output: 1
+ */
+
 function binSearch(arr, start, end, element) {
   if (start > end) return -1;
 

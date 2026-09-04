@@ -1,3 +1,12 @@
+/*
+ * Question: Left Rotate an Array by One
+ * Write a function that left rotates a given array by one position, moving the first element to the end.
+ *
+ * Examples:
+ * Input: [1, 2, 3, 4]
+ * Output: [ 2, 3, 4, 1 ]
+ */
+
 class a {
   leftRotate(arr) {
     let temp = arr[0];

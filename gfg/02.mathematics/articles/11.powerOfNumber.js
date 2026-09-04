@@ -1,3 +1,11 @@
+/*
+ * Question: Computing Power (Recursive)
+ * Write a recursive function that computes x raised to the power y (x^y).
+ *
+ * Examples:
+ * Input: 2, 7
+ * Output: 128
+ */
 const computePower = (x, y) => {
   if (y === 0) return 1;
 

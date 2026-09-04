@@ -1,3 +1,12 @@
+/*
+ * Question: Remove Duplicates from a Sorted Array
+ * Write a function that removes duplicates from a sorted array in place and returns the count of unique elements.
+ *
+ * Examples:
+ * Input: [1, 1, 1, 2, 3, 4]
+ * Output: [1, 2, 3, 4]
+ */
+
 function remDup(arr) {
   let temp = [arr[0]];
   let res = 1;
