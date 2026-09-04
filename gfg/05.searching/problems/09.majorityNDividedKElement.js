@@ -22,6 +22,19 @@
 // Time Complexity: O(n)
 // Auxiliary Space: O(n)
 
+/*
+ * Explanation
+ * -----------
+ * Approach: Frequency counting with a hash map - count how many times each value
+ * appears, then count how many distinct values exceed n/k occurrences.
+ * How it works: First loop stores each element's frequency in a Map (defaulting to
+ * 1 on first sight). Second loop walks the Map entries and increments a counter
+ * whenever a frequency is greater than length / k. Return that counter.
+ * Example: majorityNbyKelElements([1, 1, 1, 2, 2, 2, 3, 3], 3) -> 2 (1 and 2 each
+ * appear 3 times > 8/3).
+ * Time Complexity: O(n)
+ * Auxiliary Space: O(n)
+ */
 function majorityNbyKelElements(arr, k) {
   let myMap = new Map();
   let length = arr.length;
