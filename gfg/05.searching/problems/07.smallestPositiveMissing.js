@@ -23,6 +23,20 @@
 // Time Complexity: O(log n)
 // Auxiliary Space: O(1)
 
+/*
+ * Explanation
+ * -----------
+ * Approach: Cycle sort style in-place placement - put every value x (1 <= x <= n)
+ * at index x - 1, then the first index not holding i + 1 reveals the answer.
+ * How it works: First pass: while arr[i] is a positive number within [1, n] and is
+ * not already at its correct slot, swap it with the element at index arr[i] - 1.
+ * Second pass: return i + 1 for the first i where arr[i] !== i + 1. If every slot
+ * is correct, all of 1..n are present, so the answer is n + 1.
+ * Example: smallestPositiveMissing([-2, 1, 2, 4, 3]) -> 5 (after rearranging we
+ * have 1, 2, 3, 4 present, so 5 is missing).
+ * Time Complexity: O(n)
+ * Auxiliary Space: O(1)
+ */
 class Solution {
   smallestPositiveMissing(arr) {
     const length = arr.length;
